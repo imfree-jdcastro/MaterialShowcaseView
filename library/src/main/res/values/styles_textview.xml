@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SkywalkerTextView" parent="android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_charcoal</item>
+        <item name="typeface_from_assets">@string/default_font_style</item>
+    </style>
+    <style name="SkywalkerTextView_med" parent="android:TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_charcoal</item>
+        <item name="typeface_from_assets">@string/default_font_style</item>
+    </style>
+    <style name="SkywalkerTextView.Medium" parent="SkywalkerTextView_med">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="SkywalkerTextView.Black" parent="SkywalkerTextView">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="SkywalkerTextView.Black.Normal" parent="SkywalkerTextView.Black">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+    <style name="SkywalkerTextView.Black.Large" parent="SkywalkerTextView.Black">
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+    <style name="SkywalkerTextView.White" parent="SkywalkerTextView">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="SkywalkerTextView.Clickable.Heavy" parent="SkywalkerTextView">
+        <item name="typeface_from_assets">@string/default_font_style_heavy</item>
+        <item name="android:textColor">@color/decision_green</item>
+    </style>
+    <style name="SkywalkerTextView.White.Heavy" parent="SkywalkerTextView.White">
+        <item name="android:textStyle">bold</item>
+        <item name="typeface_from_assets">@string/default_font_style_heavy</item>
+    </style>
+    <style name="SkywalkerTextView.Black.Heavy" parent="SkywalkerTextView.Black">
+        <item name="android:textStyle">bold</item>
+        <item name="typeface_from_assets">@string/default_font_style_heavy</item>
+    </style>
+    <style name="SkywalkerTextView.Heavy" parent="SkywalkerTextView.Black">
+        <item name="typeface_from_assets">@string/default_font_style_heavy</item>
+    </style>
+    <style name="SkywalkerTextView.Shadowed" parent="SkywalkerTextView">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="SkywalkerTextView.Shadowed.White" parent="SkywalkerTextView.Shadowed">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="SkywalkerTextView.Normal" parent="SkywalkerTextView">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+    <style name="SkywalkerTextView.SmallText" parent="SkywalkerTextView">
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+    <style name="SkywalkerTextView.Slim" parent="SkywalkerTextView">
+        <item name="android:textSize">@dimen/font_extra_small</item>
+    </style>
+    <style name="SkywalkerTextView.Normal.White" parent="SkywalkerTextView.Normal">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="SkywalkerTextView.Normal.DarkGray" parent="SkywalkerTextView.Normal">
+        <item name="android:textColor">@color/app_dark_gray</item>
+    </style>
+    <style name="SkywalkerTextView.Slim.DarkGray" parent="SkywalkerTextView.Slim">
+        <item name="android:textColor">@color/app_dark_gray</item>
+    </style>
+    <style name="SkywalkerTextView.Signup" parent="SkywalkerTextView">
+        <item name="android:layout_marginLeft">@dimen/field_title_left_margin</item>
+        <item name="android:layout_marginBottom">@dimen/field_title_bottom_margin</item>
+    </style>
+    <style name="SkywalkerTextView.Title" parent="SkywalkerTextView">
+        <item name="android:textSize">@dimen/font_extra_large</item>
+        <item name="android:textColor">@color/purple</item>
+    </style>
+
+    <style name="SkywalkerTextView.Toolbar.Generic" parent="android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/font_extra_large</item>
+        <item name="android:textColor">@color/purple</item>
+        <item name="typeface_from_assets">@string/default_font_style</item>
+    </style>
+
+    <style name="SkywalkerTextView.Toolbar.MGM" parent="android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/font_toolbar_title_mgm</item>
+        <item name="android:textColor">@color/purple</item>
+        <item name="typeface_from_assets">@string/default_font_style</item>
+    </style>
+
+    <style name="SkywalkerTextView.Toolbar.Header" parent="android:style/Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/font_toolbar_title</item>
+        <item name="android:textColor">@color/purple</item>
+        <item name="android:layout_marginTop">@dimen/margin_toolbar_header</item>
+        <item name="typeface_from_assets">@string/default_font_style</item>
+    </style>
+    <style name="SkywalkerTextView.Toolbar.Subheader" parent="android:style/Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/font_toolbar_title</item>
+        <item name="android:textColor">@color/fine_print_explainer_text</item>
+        <item name="android:layout_marginTop">@dimen/margin_toolbar_subheader</item>
+        <item name="android:paddingLeft">@dimen/toolbar_padding</item>
+        <item name="android:paddingRight">@dimen/toolbar_padding</item>
+        <item name="typeface_from_assets">@string/default_font_style</item>
+    </style>
+
+    <style name="SkywalkerTextView.Dialog.Header" parent="android:style/Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/font_toolbar_title</item>
+        <item name="android:textColor">@color/purple</item>
+        <item name="android:layout_marginTop">@dimen/margin_dialog_header</item>
+        <item name="typeface_from_assets">@string/default_font_style</item>
+    </style>
+    <style name="SkywalkerTextView.Dialog.Subheader" parent="android:style/Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/font_dialog_subheader</item>
+        <item name="android:textColor">@color/fine_print_explainer_text</item>
+        <item name="android:layout_marginTop">@dimen/margin_dialog_subheader</item>
+        <item name="android:layout_marginBottom">@dimen/margin_dialog_subheader</item>
+        <item name="android:paddingLeft">@dimen/toolbar_padding</item>
+        <item name="android:paddingRight">@dimen/toolbar_padding</item>
+        <item name="typeface_from_assets">@string/default_font_style</item>
+    </style>
+</resources>

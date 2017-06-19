@@ -1,0 +1,184 @@
+<resources>
+
+    <!-- ui generic -->
+
+    <!-- font sizes -->
+    <dimen name="font_extra_small">10sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_normal">18sp</dimen>
+    <dimen name="font_input">18sp</dimen>
+    <dimen name="font_large">20sp</dimen>
+    <dimen name="font_dialog_subheader">20dp</dimen>
+    <dimen name="font_extra_large">25sp</dimen>
+    <dimen name="font_toolbar_title">25dp</dimen>
+    <dimen name="font_dialog_header">25dp</dimen>
+
+    <dimen name="font_toolbar_title_mgm">18sp</dimen>
+
+    <!-- typical spacing between two views -->
+
+    <!-- typical size of views -->
+    <dimen name="toolbar_height_normal">35dp</dimen>
+    <dimen name="toolbar_height">50dp</dimen>
+    <dimen name="progressbar_height_normal">3dp</dimen>
+    <dimen name="toolbar_padding">80px</dimen>
+
+
+    <!--    Splash Video  -->
+
+    <!--    Language Selection  -->
+    <dimen name="iv_margin_top">10dp</dimen>
+    <dimen name="tv_margin_top">28dp</dimen>
+    <dimen name="rg_margin_side">25dp</dimen>
+    <dimen name="rg_padding">8dp</dimen>
+    <dimen name="rb_padding">25dp</dimen>
+    <dimen name="btn_margin_bot">30dp</dimen>
+
+    <!--    Splash screen   -->
+    <dimen name="splash_logo_height">150dp</dimen>
+    <dimen name="splash_logo_width">250dp</dimen>
+    <dimen name="splash_text_margin">150dp</dimen>
+
+    <!--    Login / Registration    -->
+    <dimen name="tv_description_margin">25dp</dimen>
+
+    <!--    Personal Details Fragment     -->
+    <dimen name="main_layout_padding">30dp</dimen>
+    <dimen name="main_field_spacing">12dp</dimen>
+    <dimen name="generic_field_height">40dp</dimen>
+    <dimen name="field_title_left_margin">5dp</dimen>
+    <dimen name="field_title_bottom_margin">3dp</dimen>
+    <dimen name="field_name_side_padding">15dp</dimen>
+
+    <!--    Sign up Location Dialog     -->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="touchable_dimen">50dp</dimen>
+    <!-- circle diameter / 1.5 -->
+
+    <dimen name="main_circle_diameter">260dp</dimen>
+    <!--<dimen name="main_circle_diameter_loader">280dp</dimen>-->
+    <dimen name="main_circle_diameter_loader">70dp</dimen>
+    <dimen name="main_circle_diameter_brand_redeem_placeholder">257dp</dimen>
+    <dimen name="nav_widthheight">60dp</dimen>
+    <dimen name="nav_progress_circle_widthheight">72dp</dimen>
+    <dimen name="circle_content_area">150dp</dimen>
+    <dimen name="circle_content_area_large">175dp</dimen>
+    <dimen name="notch0_navitem_ring_thickness">4dp</dimen>
+    <dimen name="notch0_navitem_ring_thickness_small">2dp</dimen>
+    <dimen name="notch0_navitem_ring_inner_radius">26dp</dimen>
+    <dimen name="notch0_navitem_ring_inner_radius_small">18dip</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="square_btn_width_height">48dp</dimen>
+
+    <!-- rewards dimens -->
+    <dimen name="drawer.width">280dip</dimen>
+    <dimen name="drawer.internal.padding.horizontal">18dip</dimen>
+    <dimen name="drawer.internal.padding.vertical">20dip</dimen>
+    <dimen name="drawer.profile.size">56dip</dimen>
+    <dimen name="drawer.profile.text.size">22sp</dimen>
+    <dimen name="phoneload.availableforredemption.padding.horizontal">22dip</dimen>
+    <dimen name="phoneload.availableforredemption.padding.vertical">22dip</dimen>
+    <dimen name="phoneload.availableforredemption.height">110dip</dimen>
+    <dimen name="phoneload.totalearnings.height">100dip</dimen>
+    <dimen name="phoneload.available.value.topmargin">12dip</dimen>
+
+    <dimen name="brand_circle_layout_size">72dip</dimen>
+    <dimen name="brand_circle_indicator_size">68dip</dimen>
+    <dimen name="brand_circle_image_size">62dip</dimen>
+    <dimen name="brand_container_height">128dip</dimen>
+
+    <dimen name="redeemi_button_up">36dip</dimen>
+    <dimen name="redeemi_button_down">36dip</dimen>
+
+    <dimen name="redeemi_tv_voucher_name">24sp</dimen>
+    <dimen name="redeemi_tv_voucher_expire">16sp</dimen>
+    <dimen name="redeemi_tv_voucher_qrcode">16sp</dimen>
+
+    <dimen name="redeemi_btn_goto_imfree">48dip</dimen>
+
+    <dimen name="redeemi_wallet_btn_redeem">48dip</dimen>
+
+    <dimen name="confirm_dialog_btn_radius_yes">48dip</dimen>
+
+    <!-- Terms and policy dimensions-->
+    <dimen name="policy_left_right_padding">15dp</dimen>
+    <dimen name="policy_top_bottom_padding">10dp</dimen>
+    <dimen name="policy_font_please">18sp</dimen>
+    <dimen name="policy_font_terms_and_policy">16px</dimen>
+
+    <!-- MGM Invite Contact -->
+    <dimen name="padding_invite_message">14dp</dimen>
+
+    <dimen name="layout_invite_status_padding">15dp</dimen>
+    <dimen name="mgm_btn_display_add_contact_dialog">35dp</dimen>
+    <dimen name="mgm_element_standard_height">28dip</dimen>
+
+    <dimen name="dialog_mgm_btn_submit_contacts_size">64dp</dimen>
+    <dimen name="dialog_mgm_btn_submit_contacts_margin">40dp</dimen>
+
+    <dimen name="dialog_mgm_btn_close">30dp</dimen>
+    <dimen name="dialog_mgm_form_marginTop">30dp</dimen>
+    <dimen name="dialog_mgm_form_padding">20dp</dimen>
+    <dimen name="dialog_mgm_error_prompt">16sp</dimen>
+    <dimen name="dialog_mgm_input_padding">10dp</dimen>
+    <dimen name="dialog_mgm_input_textSize">10sp</dimen>
+    <dimen name="dialog_mgm_add_contact_form_padding">10dp</dimen>
+
+    <dimen name="dialog_mgm_btn_label_textSize">16sp</dimen>
+
+    <dimen name="dialog_mgm_progress_bar_size">64dp</dimen>
+
+    <!-- Loading dimens -->
+    <dimen name="loading_text_padding">30dp</dimen>
+
+    <!-- Welcome Dialog dimens -->
+
+    <!-- Landing terms and policy dimens -->
+    <dimen name="landing_term_and_policy_font_size">13sp</dimen>
+    <dimen name="font_size_proceed_btn_label">12sp</dimen>
+    <dimen name="landing_log_in_font_size">14sp</dimen>
+    <dimen name="notchzero_border_ring_radius">130dp</dimen>
+    <dimen name="notchzero_border_ring_thickness">0.5dp</dimen>
+
+    <!-- Scan page -->
+    <dimen name="scan.frame.thickness">56dip</dimen>
+    <dimen name="scan.frame.thickness.half">28dip</dimen>
+    <dimen name="scan.preview.height">48dip</dimen>
+
+    <!-- Activities History -->
+    <dimen name="item.activities.history.circle.size">48dip</dimen>
+    <dimen name="item.activities.history.image.size">42dip</dimen>
+
+    <!-- Settings page -->
+    <dimen name="settings.item.margin">26dip</dimen>
+    <dimen name="settings.item.margin.push">20dp</dimen>
+    <dimen name="settings.item.padding">30dp</dimen>
+    <dimen name="settings.item.margin.description.text">15dp</dimen>
+    <dimen name="settings.item.marginleft.push">10dp</dimen>
+    <dimen name="margin_landing_banner_margin_top">50dp</dimen>
+    <dimen name="margin_landing_banner_margin_bottom">100px</dimen>
+    <dimen name="margin_landing_text">47px</dimen>
+    <dimen name="scrollbar_size_terms_dialog">4px</dimen>
+    <dimen name="terms_header_undeline_height">3dp</dimen>
+    <dimen name="margin_default_terms_dialog">30px</dimen>
+    <dimen name="margin_proceed_btn">40px</dimen>
+    <dimen name="margin_proceed_dialog_btn">100px</dimen>
+
+
+    <dimen name="widget_margin_xs">5dp</dimen>
+    <dimen name="widget_margin_normal">25dp</dimen>
+    <dimen name="margin_toolbar_header">10dp</dimen>
+    <dimen name="margin_toolbar_subheader">12dp</dimen>
+    <dimen name="margin_dialog_header">15dp</dimen>
+    <dimen name="margin_dialog_subheader">10dp</dimen>
+
+    <dimen name="circular_seekbar_radius">150dip</dimen>
+    <dimen name="liquid_heart_size">50dip</dimen>
+    <dimen name="liquid_heart_container_size">100dip</dimen>
+    <dimen name="sms_fallback_margin">150dp</dimen>
+</resources>

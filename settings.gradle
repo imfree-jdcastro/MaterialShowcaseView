@@ -1,1 +1,4 @@
-include ':library'
+include ':library', ':framework'
+
+project(':framework').projectDir = new File(settingsDir, '../framework/ImFreeFramework/framework')
+

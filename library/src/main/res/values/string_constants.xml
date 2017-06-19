@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_font_style">fonts/Bariol_Regular.otf</string>
+    <string name="default_font_style_heavy">fonts/Avenir-Heavy.ttf</string>
+</resources>

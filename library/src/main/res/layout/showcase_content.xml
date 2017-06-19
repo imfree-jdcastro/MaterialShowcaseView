@@ -4,39 +4,51 @@
     android:id="@+id/content_box"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
+    <mobile.imfree.com.framework.widget.IFTextView
+        android:layout_marginTop="12dp"
+        style="@style/SkywalkerTextView"
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:paddingLeft="5dp"
-        android:textSize="30dp"
+        android:textSize="@dimen/font_large"
+        android:gravity="center"
+        android:text="SampleText"
         android:layout_marginBottom="15dp" />
 
-    <TextView
+    <mobile.imfree.com.framework.widget.IFTextView
+        style="@style/SkywalkerTextView"
         android:id="@+id/tv_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:paddingLeft="5dp"
-        android:textSize="20dp" />
+        android:gravity="center"
+        android:text="SampleText"
+        android:textSize="@dimen/font_normal" />
 
-    <TextView
+    <mobile.imfree.com.framework.widget.IFTextView
+        style="@style/SkywalkerTextView"
         android:id="@+id/tv_dismiss"
-        android:background="?android:attr/selectableItemBackground"
+        android:background="@drawable/border_round_white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:clickable="true"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         android:textColor="@android:color/white"
-        android:textSize="22dp"
+        android:textSize="@dimen/font_normal"
+        android:text="SampleText"
         android:visibility="gone" />
 
 </LinearLayout>
