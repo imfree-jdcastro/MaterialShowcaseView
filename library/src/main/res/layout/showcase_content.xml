@@ -18,7 +18,6 @@
         android:paddingLeft="5dp"
         android:textSize="@dimen/font_large"
         android:gravity="center"
-        android:text="SampleText"
         android:layout_marginBottom="15dp" />
 
     <mobile.imfree.com.framework.widget.IFTextView
@@ -29,7 +28,6 @@
         android:textColor="@android:color/black"
         android:paddingLeft="5dp"
         android:gravity="center"
-        android:text="SampleText"
         android:textSize="@dimen/font_normal" />
 
     <mobile.imfree.com.framework.widget.IFTextView
@@ -48,7 +46,6 @@
         android:paddingRight="15dp"
         android:textColor="@android:color/white"
         android:textSize="@dimen/font_normal"
-        android:text="SampleText"
         android:visibility="gone" />
 
 </LinearLayout>
