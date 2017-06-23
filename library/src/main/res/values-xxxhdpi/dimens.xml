@@ -4,25 +4,24 @@
 
     <!-- font sizes -->
     <dimen name="font_extra_small">10sp</dimen>
-    <dimen name="font_small">12sp</dimen>
-    <dimen name="font_normal2">16sp</dimen>
-    <dimen name="font_normal">18sp</dimen>
-    <dimen name="font_input">18sp</dimen>
-    <dimen name="font_large">20sp</dimen>
+    <dimen name="font_small">11sp</dimen>
+    <dimen name="font_normal2">14sp</dimen>
+    <dimen name="font_normal">16sp</dimen>
+    <dimen name="font_input">16sp</dimen>
+    <dimen name="font_large">18sp</dimen>
     <dimen name="font_dialog_subheader">20dp</dimen>
-    <dimen name="font_extra_large">25sp</dimen>
-    <dimen name="font_toolbar_title">25dp</dimen>
-    <dimen name="font_dialog_header">25dp</dimen>
+    <dimen name="font_extra_large">23sp</dimen>
+    <dimen name="font_toolbar_title">23dp</dimen>
+    <dimen name="font_dialog_header">23dp</dimen>
 
     <dimen name="font_toolbar_title_mgm">18sp</dimen>
 
 
-    <dimen name="widget_margin_small">15dp</dimen>
     <dimen name="widget_margin_xs">5dp</dimen>
+    <dimen name="widget_margin_small">12dp</dimen>
     <dimen name="widget_margin_normal">25dp</dimen>
     <dimen name="margin_toolbar_header">10dp</dimen>
     <dimen name="margin_toolbar_subheader">12dp</dimen>
     <dimen name="margin_dialog_header">15dp</dimen>
     <dimen name="margin_dialog_subheader">10dp</dimen>
-
 </resources>

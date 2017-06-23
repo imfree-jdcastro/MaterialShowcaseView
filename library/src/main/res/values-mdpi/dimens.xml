@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- ui generic -->
+
+    <!-- font sizes -->
+    <dimen name="font_extra_small">8sp</dimen>
+    <dimen name="font_small">9sp</dimen>
+    <dimen name="font_normal2">11sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_input">14sp</dimen>
+    <dimen name="font_large">16sp</dimen>
+    <dimen name="font_dialog_subheader">18dp</dimen>
+    <dimen name="font_extra_large">23sp</dimen>
+    <dimen name="font_toolbar_title">23dp</dimen>
+    <dimen name="font_dialog_header">23dp</dimen>
+
+    <dimen name="font_toolbar_title_mgm">18sp</dimen>
+
+    <dimen name="widget_margin_xs">5dp</dimen>
+    <dimen name="widget_margin_small">8dp</dimen>
+    <dimen name="widget_margin_normal">25dp</dimen>
+    <dimen name="margin_toolbar_header">10dp</dimen>
+    <dimen name="margin_toolbar_subheader">12dp</dimen>
+    <dimen name="margin_dialog_header">15dp</dimen>
+    <dimen name="margin_dialog_subheader">10dp</dimen>
+
+</resources>

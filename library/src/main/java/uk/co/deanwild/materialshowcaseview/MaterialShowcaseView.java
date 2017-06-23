@@ -25,6 +25,7 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -79,6 +80,8 @@ public class MaterialShowcaseView extends FrameLayout implements View.OnTouchLis
     private IDetachedListener mDetachedListener;
     private boolean mTargetTouchable = false;
     private boolean mDismissOnTargetTouch = true;
+    private int left;
+    private int right;
 
     public MaterialShowcaseView(Context context) {
         super(context);
@@ -116,7 +119,7 @@ public class MaterialShowcaseView extends FrameLayout implements View.OnTouchLis
 
         mMaskColour = Color.parseColor(ShowcaseConfig.DEFAULT_MASK_COLOUR);
         setVisibility(INVISIBLE);
-
+ 
 
         View contentView = LayoutInflater.from(getContext()).inflate(R.layout.showcase_content, this, true);
         mContentBox = contentView.findViewById(R.id.content_box);
@@ -124,6 +127,30 @@ public class MaterialShowcaseView extends FrameLayout implements View.OnTouchLis
         mContentTextView = (TextView) contentView.findViewById(R.id.tv_content);
         mDismissButton = (TextView) contentView.findViewById(R.id.tv_dismiss);
         mDismissButton.setOnClickListener(this);
+
+        mDismissButton.addOnLayoutChangeListener(new OnLayoutChangeListener() {
+            @Override
+            public void onLayoutChange(View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
+                MaterialShowcaseView.this.left = left;
+                MaterialShowcaseView.this.right = right;
+            }
+        });
+        mDismissButton.post(new Runnable() {
+            @Override
+            public void run() {
+
+//
+//                Toast.makeText(getContext(),
+//                        "content bottom is : " + mContentBox.getBottom() +
+//                        "mDismissButton top is" + mDismissButton.getTop()
+//                        , Toast.LENGTH_LONG).show();
+//
+//
+//                Toast.makeText(getContext(), "dismiss width is : " + mDismissButton.getMeasuredHeight()
+//                         + " w is " + mDismissButton.getHeight() + " " + left + "|" + right
+//                        , Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
 
@@ -181,6 +208,7 @@ public class MaterialShowcaseView extends FrameLayout implements View.OnTouchLis
 
         // Draw the bitmap on our views  canvas.
         canvas.drawBitmap(mBitmap, 0, 0, null);
+
     }
 
     @Override
@@ -358,12 +386,16 @@ public class MaterialShowcaseView extends FrameLayout implements View.OnTouchLis
         if (mTitleTextView != null && !contentText.equals("")) {
 
             mTitleTextView.setText(contentText);
+        } else {
+            mTitleTextView.setVisibility(GONE);
         }
     }
 
     private void setContentText(CharSequence contentText) {
-        if (mContentTextView != null) {
+        if (mContentTextView != null && !contentText.equals("")) {
             mContentTextView.setText(contentText);
+        } else {
+            mContentTextView.setVisibility(GONE);
         }
     }
 
