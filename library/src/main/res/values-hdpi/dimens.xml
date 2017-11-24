@@ -4,8 +4,8 @@
 
     <!-- font sizes -->
     <dimen name="font_extra_small">10sp</dimen>
-    <dimen name="font_small">11sp</dimen>
-    <dimen name="font_normal2">13sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_normal2">14sp</dimen>
     <dimen name="font_normal">16sp</dimen>
     <dimen name="font_input">16sp</dimen>
     <dimen name="font_large">18sp</dimen>

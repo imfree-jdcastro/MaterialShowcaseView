@@ -44,6 +44,11 @@
     <style name="SkywalkerTextView.Heavy" parent="SkywalkerTextView.Black">
         <item name="typeface_from_assets">@string/default_font_style_heavy</item>
     </style>
+    <style name="SkywalkerTextView.Heavy2" parent="SkywalkerTextView">
+        <item name="android:textSize">@dimen/font_normal2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@string/default_font_style</item>
+    </style>
     <style name="SkywalkerTextView.Shadowed" parent="SkywalkerTextView">
         <item name="android:textSize">@dimen/font_normal</item>
         <item name="android:shadowColor">@color/black</item>
@@ -56,6 +61,9 @@
     </style>
     <style name="SkywalkerTextView.Normal" parent="SkywalkerTextView">
         <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+    <style name="SkywalkerTextView.Normal2" parent="SkywalkerTextView">
+        <item name="android:textSize">@dimen/font_normal2</item>
     </style>
     <style name="SkywalkerTextView.SmallText" parent="SkywalkerTextView">
         <item name="android:textSize">@dimen/font_small</item>
