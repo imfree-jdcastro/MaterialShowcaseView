@@ -14,6 +14,8 @@ import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Handler;
+import android.text.Html;
+import android.text.Spanned;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
@@ -383,28 +385,40 @@ public class MaterialShowcaseView extends FrameLayout implements View.OnTouchLis
     }
 
     private void setTitleText(CharSequence contentText) {
-        if (mTitleTextView != null && !contentText.equals("")) {
-
-            mTitleTextView.setText(contentText);
-        } else {
-            mTitleTextView.setVisibility(GONE);
+        if (mTitleTextView != null) {
+            if(contentText != null && !contentText.equals("")) {
+                //mTitleTextView.setText(contentText);
+                mTitleTextView.setText(fromHtml(contentText.toString()));
+            } else {
+                mTitleTextView.setVisibility(GONE);
+            }
         }
     }
 
     private void setContentText(CharSequence contentText) {
-        if (mContentTextView != null && !contentText.equals("")) {
-            mContentTextView.setText(contentText);
-        } else {
-            mContentTextView.setVisibility(GONE);
+        if (mContentTextView != null) {
+            if(contentText != null && !contentText.equals("")) {
+                //mContentTextView.setText(contentText);
+                mContentTextView.setText(fromHtml(contentText.toString()));
+            } else {
+                mContentTextView.setVisibility(GONE);
+            }
         }
     }
 
     private void setDismissText(CharSequence dismissText) {
         if (mDismissButton != null) {
-            mDismissButton.setText(dismissText);
-
+            //mDismissButton.setText(dismissText);
+            mContentTextView.setText(fromHtml(dismissText.toString()));
             updateDismissButton();
         }
+    }
+
+    private Spanned fromHtml(String text) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            return Html.fromHtml(text, Html.FROM_HTML_MODE_LEGACY);
+        }
+        return Html.fromHtml(text);
     }
 
     private void setDismissStyle(Typeface dismissStyle) {
