@@ -387,8 +387,7 @@ public class MaterialShowcaseView extends FrameLayout implements View.OnTouchLis
     private void setTitleText(CharSequence contentText) {
         if (mTitleTextView != null) {
             if(contentText != null && !contentText.equals("")) {
-                //mTitleTextView.setText(contentText);
-                mTitleTextView.setText(fromHtml(contentText.toString()));
+                mTitleTextView.setText(contentText);
             } else {
                 mTitleTextView.setVisibility(GONE);
             }
@@ -398,8 +397,7 @@ public class MaterialShowcaseView extends FrameLayout implements View.OnTouchLis
     private void setContentText(CharSequence contentText) {
         if (mContentTextView != null) {
             if(contentText != null && !contentText.equals("")) {
-                //mContentTextView.setText(contentText);
-                mContentTextView.setText(fromHtml(contentText.toString()));
+                mContentTextView.setText(contentText);
             } else {
                 mContentTextView.setVisibility(GONE);
             }
@@ -408,17 +406,9 @@ public class MaterialShowcaseView extends FrameLayout implements View.OnTouchLis
 
     private void setDismissText(CharSequence dismissText) {
         if (mDismissButton != null) {
-            //mDismissButton.setText(dismissText);
-            mContentTextView.setText(fromHtml(dismissText.toString()));
+            mDismissButton.setText(dismissText);
             updateDismissButton();
         }
-    }
-
-    private Spanned fromHtml(String text) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            return Html.fromHtml(text, Html.FROM_HTML_MODE_LEGACY);
-        }
-        return Html.fromHtml(text);
     }
 
     private void setDismissStyle(Typeface dismissStyle) {
