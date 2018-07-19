@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-  
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/content_box"
     android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         android:paddingLeft="5dp"
         android:textSize="@dimen/font_large"
         android:gravity="center"
-        android:layout_marginBottom="@dimen/widget_margin_small" />
+        android:layout_marginBottom="5dp" />
 
     <mobile.imfree.com.framework.widget.IFTextView
         style="@style/SkywalkerTextView"
@@ -29,21 +29,21 @@
         android:paddingLeft="5dp"
         android:gravity="center"
         android:textSize="@dimen/font_normal2"
-        android:layout_marginBottom="@dimen/widget_margin_small" />
+        android:layout_marginBottom="5dp" />
 
     <mobile.imfree.com.framework.widget.IFTextView
-        style="@style/SkywalkerTextView"
         android:id="@+id/tv_dismiss"
-        android:background="@drawable/border_round_white"
+        style="@style/SkywalkerTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:paddingBottom="5dp"
-        android:paddingTop="5dp"
         android:layout_gravity="right"
+        android:background="@drawable/border_round_white"
+        android:clickable="true"
         android:gravity="center"
+        android:paddingBottom="5dp"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
+        android:paddingTop="5dp"
         android:textColor="@android:color/white"
         android:textSize="@dimen/font_normal"
         android:visibility="gone" />
